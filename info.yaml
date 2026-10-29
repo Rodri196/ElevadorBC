@@ -1,7 +1,7 @@
 # Proyecto Tiny Tapeout SKY130 - basado en el archivo CircuitVerse del usuario.
 project:
   title: "Elevador de 8 niveles"
-  author: "Autor del proyecto CircuitVerse"
+  author: "Porras"
   discord: ""
   description: "Elevador secuencial de 8 niveles: un piso por ciclo, con 8 LEDs one-hot"
   language: "Verilog"
