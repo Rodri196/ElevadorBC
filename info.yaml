@@ -1,48 +1,35 @@
-# Tiny Tapeout project information
+# Proyecto Tiny Tapeout SKY130 - basado en el archivo CircuitVerse del usuario.
 project:
-  title:        ""      # Project title
-  author:       ""      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
-  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
-
-  # How many tiles your design occupies? A single tile is about 167x108 uM.
-  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
-
-  # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_example"
-
-  # List your project's source files here.
-  # Source files must be in ./src and you must list each source file separately, one per line.
-  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  title: "Elevador de 8 niveles"
+  author: "Autor del proyecto CircuitVerse"
+  discord: ""
+  description: "Elevador secuencial de 8 niveles: un piso por ciclo, con 8 LEDs one-hot"
+  language: "Verilog"
+  # Frecuencia DEMOSTRATIVA: suministra 1 Hz externo para observar cada piso.
+  # Cambia este campo si usaras otra frecuencia de reloj real.
+  clock_hz: 1
+  tiles: "1x1"
+  # Idealmente reemplazar por tt_um_TUUSUARIO_elevador antes de enviar.
+  top_module: "tt_um_elevador_cv"
   source_files:
     - "project.v"
-
-# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
-# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
-  # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
+  ui[0]: "T0 (destino bit 0)"
+  ui[1]: "T1 (destino bit 1)"
+  ui[2]: "T2 (destino bit 2)"
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
-
-  # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
-
-  # Bidirectional pins
+  uo[0]: "LED S2"
+  uo[1]: "LED S1"
+  uo[2]: "LED PB"
+  uo[3]: "LED P1"
+  uo[4]: "LED P2"
+  uo[5]: "LED P3"
+  uo[6]: "LED P4"
+  uo[7]: "LED P5"
   uio[0]: ""
   uio[1]: ""
   uio[2]: ""
@@ -51,6 +38,4 @@ pinout:
   uio[5]: ""
   uio[6]: ""
   uio[7]: ""
-
-# Do not change!
 yaml_version: 6
