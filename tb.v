@@ -18,7 +18,7 @@ module tb ();
   wire VPWR = 1'b1;
   wire VGND = 1'b0;
 `endif
-  tt_um_elevador_cv user_project (
+  tt_um_porras_elevador_cv user_project (
 `ifdef GL_TEST
     .VPWR(VPWR),
     .VGND(VGND),
