@@ -10,7 +10,7 @@ project:
   clock_hz: 1
   tiles: "1x1"
   # Idealmente reemplazar por tt_um_TUUSUARIO_elevador antes de enviar.
-  top_module: "tt_um_elevador_cv"
+  top_module: "tt_um_porras_elevador_cv"
   source_files:
     - "project.v"
 pinout:
