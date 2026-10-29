@@ -5,7 +5,7 @@
 // en cada flanco positivo del reloj.
 `default_nettype none
 
-module tt_um_elevador_cv (
+module tt_um_porras_elevador_cv (
     input  wire [7:0] ui_in,
     output wire [7:0] uo_out,
     input  wire [7:0] uio_in,
